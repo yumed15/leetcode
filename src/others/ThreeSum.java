@@ -19,7 +19,7 @@ public class ThreeSum {
 
         for (int i=0; i<nums.length; i++) {
             for (int j=0; j<nums.length; j++) {
-                int aux = 0-nums[i]-nums[j];
+                int aux = -nums[i] - nums[j];
                 if ((aux==nums[i] || aux==nums[j]) && (map.containsKey(aux)) && map.get(aux)>1) {
                     if(!res.contains(Arrays.asList(nums[i], nums[j], aux)))
                         res.add(Arrays.asList(nums[i], nums[j], aux));

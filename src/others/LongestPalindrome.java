@@ -4,7 +4,7 @@ package others;
 public class LongestPalindrome {
 
     public static int expandAroundMiddle(String s, int left, int right) {
-        while(left>0 && right<s.length() && s.charAt(left)==s.charAt(right)) {
+        while(left>=0 && right<s.length() && s.charAt(left)==s.charAt(right)) {
             left--;
             right++;
         }
@@ -13,7 +13,7 @@ public class LongestPalindrome {
 
     public static String longestPalindrome(String s) {
 
-        if(s.length() < 1) return "";
+        if (s == null || s.length() < 1) return "";
 
         int start = 0, end = 0;
         for(int i=0; i<s.length(); i++) {
