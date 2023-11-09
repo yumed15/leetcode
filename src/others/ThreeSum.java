@@ -2,7 +2,9 @@ package others;
 
 import java.util.*;
 
-// problem 15
+// Problem 15
+// https://leetcode.com/problems/3sum/
+
 public class ThreeSum {
     public static List<List<Integer>> threeSum(int[] nums) {
 
@@ -34,11 +36,3 @@ public class ThreeSum {
         return res;
     }
 }
-
-/*
-
-[-1,0,1,2,-1,-4]
-
--1
-
-*/

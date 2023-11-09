@@ -1,16 +1,13 @@
 package algorithms;
 
-import java.util.Iterator;
 import java.util.LinkedList;
-// DFS algorithm in Java
+import java.util.List;
 
-import java.util.*;
-
-public class Graph {
+public class GraphTraversal {
     private int vertices; // Number of vertices
     private List<Integer>[] adjacencyList; // Adjacency list
 
-    public Graph(int vertices) {
+    public GraphTraversal(int vertices) {
         this.vertices = vertices;
         adjacencyList = new LinkedList[vertices];
         for (int i = 0; i < vertices; i++) {
@@ -37,7 +34,7 @@ public class Graph {
     }
 
     void BFS(int s) {
-        boolean visited[] = new boolean[vertices];
+        boolean[] visited = new boolean[vertices];
         LinkedList<Integer> queue = new LinkedList<>();
 
         visited[s] = true;
@@ -65,6 +62,18 @@ public class Graph {
     public void runBFSTraversal(int v) {
         System.out.println("\nFollowing is Breadth First Traversal");
         BFS(v);
+    }
+
+    public static void main(String []args) {
+        GraphTraversal g = new GraphTraversal(5);
+
+        g.addEdge(0, 1);
+        g.addEdge(0, 2);
+        g.addEdge(0, 3);
+        g.addEdge(1, 2);
+        g.addEdge(2, 4);
+
+        g.runBFSTraversal(4);
     }
 
 }

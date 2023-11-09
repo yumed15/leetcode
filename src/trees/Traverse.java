@@ -5,9 +5,8 @@ import java.util.List;
 
 
 public class Traverse {
-    List<Integer> res = new ArrayList<>();
-
     public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
         if(root == null)
             return res;
 
@@ -19,7 +18,6 @@ public class Traverse {
     }
 
     public List<List<Integer>> levelOrder(TreeNode root) {
-
         List<List<Integer>> res = new ArrayList<>();
         int h = getHeight(root);
         for(int i=0; i<h; i++) {

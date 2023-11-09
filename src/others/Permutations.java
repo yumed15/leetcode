@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
+// Problem 46
+// https://leetcode.com/problems/permutations/
+
 public class Permutations {
     public void helper(int[] nums, int l, List<List<Integer>> res, HashSet<Integer> used, List<Integer> cur) {
         if (cur.size() == l) {

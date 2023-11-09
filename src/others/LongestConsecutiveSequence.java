@@ -3,6 +3,9 @@ package others;
 import java.util.HashSet;
 import java.util.Set;
 
+// Problem 128
+// https://leetcode.com/problems/longest-consecutive-sequence/
+
 public class LongestConsecutiveSequence {
     public int longestConsecutive(int[] nums) {
 
